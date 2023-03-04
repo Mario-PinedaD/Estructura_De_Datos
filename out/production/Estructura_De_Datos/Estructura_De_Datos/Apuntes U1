@@ -1,0 +1,109 @@
+1.5.- Análisis de algoritmos
+    Algoritmo: Pasos utilizados para resolver un problema
+    Características:
+        - Inicio(Entrada)
+        - Fin(Salida)
+        - Puede ser malo(Si marca un error se acabará) o bueno()
+        - Determinismo:
+        - Viabilidad: Que pueda ser llevado a cabo
+
+    Agoritmos basicos:
+        - Operaciones aritméricas (+, -, /, *)
+        - Operaciones Lógicas (and, or, not)
+        - Operaciones relacionales (<,>,=, etc.)
+        - Transicion de datos (Entradas, Salidas, Asignacion y otros)
+
+1.5.1.- Complejidad en el tiempo
+    Hablamos principalmente edl tiempo de ejecucion
+
+    F(N)
+    T(N)
+    Donde:
+          N = Tamaño del problema
+          F(N) = Funcion Tamaño problema
+          T(N) = Total de ejecuciones del tamaño problema
+
+    Complejidad del tiempo = 0.
+    Decimos que T(N) = 0(F(N)); "El total del tiempo es igual a
+                           |     la complejidad del tiempo va en funcion del damño del problema"
+                           |_ Es progresiva de la complejidad del tiempo.
+    --------------------------------------------------------------------------------------------------------------------
+    La complejidad del tiempo(0):
+    Baiscamente es: ¿Cuanto tiempo se va a tardar la ejecucion del programa?
+
+    Calculos complejidad del tiempo:
+        - Ciclos
+            void esto(int a){
+            int Hola=0;
+            for(int Adios=0;Adios<20;Adios++){ //Aqui son 20
+                Hola++;
+                }
+            }
+        - 2 Ciclos o mas:
+            Pueden estar anidados
+
+            void esto(int a){
+            int Hola=0;
+            int hi=0;
+            for(int Adios=0;Adios<20;Adios++){ //Aqui son 20
+                for(int Bye=0;Bye<30;bye++){// Aqui son 50, porque se van sumando
+                hi++;
+                }
+            }
+        - Relacion Inclusiva: El numero de ejecuciones es el producto del número de bucles de los 2 bucles
+
+            void esto(int a){
+            int Hola=0;
+            int hi=0;
+            for(int Adios=0;Adios<20;Adios++){ //Aqui son 20
+                for(int Bye=0;Bye<30;bye++){// Aqui son 50, porque se van sumando
+                    for(int H=S; H<100;H++){
+                    hi++;
+                    Hola++;
+                    }//Aqui se hacen 4465
+                }
+            }
+
+        BUSQUEDA BINARIA
+        El calculo de la busqueda se reduce a la mitad. 0(log2N)
+
+            Fibonachi
+
+                            n                           2^(1^-1)
+                    n1              n2                  2^(2^-1)
+              n2        n3    n3          n4            2^(3^-1)
+          n3       n4      n5      n6          n7       2^(5^-1)
+                                                        2^(N^-1)
+
+
+1.5.2.- Complejidad del espacio
+    Cantidad de memoria requerida para la ejecucion de un programa
+        Utilizamos:
+        - Variables
+        - Constantes
+        - Librerias
+        - Arreglos
+        - Estructura de datos
+        - Entradas
+        - Salidas
+
+    La memoria está compuesta por 2 partes:
+        - Memoría estática: Es espacio fijo
+            - Entrada
+            - Salida
+            - Espacio de las variables
+        - Memoria dinámica: Esta aumenta y disminuye:
+            - Espacio asignado dinamicamente
+            - Se puede ver en pilas responsivas
+
+    la complejidad espacial está repsresentada por S(n)=0(f(n)) (La copmlejidad espacial es igual a la complejidad del tiempo)
+
+    Complejidad del tiempo de fibonashi: (es como nodos de tipo doble, primero pregunta a uno luego a otro hasta que se encuentre
+                                            y luego vuelve al inicio)
+
+                            n                           2^(1^-1)
+                    n1              n2                  2^(2^-1)
+              n2        n3    n3          n4            2^(3^-1)
+          n3       n4      n5      n6          n7       2^(5^-1)
+                                                        2^(N^-1)
+
